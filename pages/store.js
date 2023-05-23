@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const StoreCard = ({ name, discount, store, points }) => {
+const Store = ({ name, discount, store, points }) => {
   return (
     <div
       style={{
@@ -38,4 +38,4 @@ const StoreCard = ({ name, discount, store, points }) => {
   );
 };
 
-export default StoreCard;
+export default Store;

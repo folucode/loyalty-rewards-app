@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import StoreCard from './StoreCard';
+import Store from './store';
 import { Client, Databases, ID, Query } from 'appwrite';
 
 const client = new Client()
@@ -95,7 +95,7 @@ const HomePage = () => {
         className='grid-box'
       >
         {stores.map((store, index) => (
-          <StoreCard
+          <Store
             key={index}
             name={store.name}
             discount={store.discount}
